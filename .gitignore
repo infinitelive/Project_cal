@@ -1,0 +1,30 @@
+# Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+*.VC.db
+*.opensdf
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+.vs/
+*.exe
+*.pdb
+*.dll
+*.dylib
+*.app
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
+
+# Local / agent
+graphify-out/
+**/__pycache__/
+*.pyc

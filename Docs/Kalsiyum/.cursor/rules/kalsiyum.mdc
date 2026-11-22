@@ -1,0 +1,44 @@
+---
+description: Kalsiyum UE5 game — scope, dual-AI, third-person combat rules
+alwaysApply: true
+---
+
+# Kalsiyum
+
+Unreal Engine 5, third-person action-adventure, PC only.
+UE project root: `D:\Project Cal\Project_Calcium` (not `ue-project/`).
+Campfire checkpoints (persistent world, Ghost of Tsushima style). Tone: sarcastic tragicomedy.
+Story content is deferred — do not invent plot, dialogue trees, or the ending twist unless the user asks.
+
+## Dual-AI
+
+- You are usually the **polish / bug / feel** pass. Antigravity owns large scaffolds.
+- Before editing, read `AGENT_HANDOFF.md` and `docs/SCOPE.md`.
+- Do not rewrite systems another agent just scaffolded unless fixing a bug.
+- End meaningful work by updating `AGENT_HANDOFF.md` (focus, owner, how to test).
+
+## Agent stack (Cursor + Antigravity)
+
+- **Superpowers:** brainstorm → plan → implement (TDD) → systematic-debug → verify before “done”.
+- **Ponytail:** smallest complete change; prefer `/ponytail` on scaffolds and reviews.
+- **Graphify:** if `graphify-out/graph.json` exists (repo root `Project Cal/`), answer architecture/relationship questions from the graph first (`/graphify query`).
+
+## Scope
+
+- v0.1 only: TP move + camera, melee, risky block → limb drop/reattach, 2 arm prosthetics, 3 flame moods, campfire save/rest, bone-density HUD, one blockout space.
+- No roguelite runs, no first-person, no online, no seven culture kits yet.
+
+## Code / content style
+
+- Prefer Actor Components + DataAssets over a god Character Blueprint.
+- Names: `BP_TP_Kalsiyum`, `BP_Campfire`, `AC_LimbSocket`, `AC_MoodFlame`, `DA_Limb_*`, `UI_BoneDensity`.
+- Health is **Bone Density**.
+- Camera: SpringArm follow; lock-on stub early, polish later.
+- Placeholder meshes/anims OK; feel and rules first.
+- Any player-facing text: short, sarcastic, not slapstick.
+
+## Do not
+
+- Add story systems “for later”
+- Soften the block risk (block must be dangerous)
+- Switch engine or to first-person without an explicit user decision
