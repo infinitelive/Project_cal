@@ -28,3 +28,9 @@ Desktop.ini
 graphify-out/
 **/__pycache__/
 *.pyc
+
+# Huge local caches (keep Content + RawImports)
+Project_Calcium/Saved/
+Project_Calcium/Intermediate/
+Project_Calcium/DerivedDataCache/
+Project_Calcium/Binaries/

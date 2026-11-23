@@ -85,8 +85,8 @@ Commit mesajı örneği: `feat(limbs): drop and reattach right arm socket`
 **Çıkış:** Blok riskli; kol düşüyor; yerden takıyorsun.
 
 ### Faz 4 — Protez kollar ×2 `[AG]` → `[CU]`
-- [ ] `[AG]` `DA_Limb_VikingArm`, `DA_Limb_NinjaArm`
-- [ ] `[AG]` Socket component okur DataAsset → damage/speed
+- [x] `[AG]` `DA_Limb_VikingArm`, `DA_Limb_NinjaArm`
+- [x] `[AG]` Socket component okur DataAsset → damage/speed
 - [ ] `[CU]` Görsel mesh swap (placeholder static mesh OK)
 - [ ] `[CU]` Ağır vs çevik hissedilir fark
 
